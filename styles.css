@@ -1,0 +1,203 @@
+body {
+    font-family: "Poetsen One", sans-serif;
+    font-style: normal;
+    margin: 20;
+    background-image: url(imagenes/fondo1.png);  
+}
+
+li {list-style: none;}
+
+
+header {
+    border-bottom: solid rgba(128, 128, 128, 0.301);
+    display: flex;
+    flex-wrap: wrap;
+    background-size:cover;
+    }
+    
+header nav {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    gap: 30rem;
+    margin: 0;
+    background-color: rgba(240, 137, 52, 0.705);
+    border: solid rgb(245, 168, 96);
+    }
+
+header ul {
+        display: flex;
+        flex-wrap: wrap;
+        width:90%;
+        gap: 1rem;
+        font-size: 1rem;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+header li {
+        font-size: 4vh;
+    }
+
+header img {
+    width: 35%;
+    border: solid rgb(245, 168, 96);
+    }
+
+header a {
+        text-decoration: none;      
+        color:black;
+    }
+
+main {
+        display: block;
+        background-size: cover;
+
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+}
+
+main>section>h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+.producto div {
+    align-items: center;
+}
+.producto img {
+    width: 50%;
+    height: 50%;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.opiniones h2 {
+    
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem;
+    border-top: rgba(0, 33, 104, 0.192) solid;
+    padding: 1rem;
+   
+}
+
+
+.carrito h2 {
+    
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem;
+    border-top: rgba(0, 33, 104, 0.192) solid;
+    padding: 1rem;
+   
+}
+
+.tradicion h2 {
+    
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem;
+    border-top: rgba(0, 33, 104, 0.192) solid;
+    padding: 1rem;
+   
+}
+
+.cont-video {
+
+    display: flex;
+    justify-content: center;  
+}   
+    
+video {
+    width: 40%;
+    height: 40%;
+    
+}
+
+
+.mapa h2 {
+    
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem;
+    border-top: rgba(0, 33, 104, 0.192) solid;
+    padding: 1rem;
+   
+}
+
+.mapa iframe {
+    height: 40vh;
+    width: 40%
+    
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.formulario h2 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem;
+    border-top: rgba(0, 33, 104, 0.192) solid;
+    padding: 1rem;
+}
+
+.formulario div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.formulario label {
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.formulario form div {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario input {
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+

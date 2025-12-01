@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuente de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Iconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Lily dulces</title>
+    <link rel="icon" href="imagenes/logo3.ico"/>
+</head>
+
+<body>
+    <header>
+       <div>
+            <img src="imagenes/Logo.jpg" alt="Logo" title="Lily Dulces">
+       </div>
+        <nav>
+            <ul>
+                <li><a href="#"> Inicio</a></li>
+                <li><a href="#productos"> Productos</a></li>
+                <li><a href="#opiniones"> Reseñas</a></li>
+                <li><a href="#mapa"> Ubicanos</a></li>
+                <li><a href="#formulario"> Contactanos</a></li>
+                <li><a href="#carrito" > <i class="fa fa-cart-arrow-down" aria-hidden="true" ></i></a></li>
+                
+            </ul>
+            
+        </nav>
+    </header>
+    
+    <main>
+    <section id=inicio>
+<!-- Productos -->
+    <section class="producto" id=productos>
+    <h2>Productos</h2>
+    <div>
+        <img src="imagenes/coquitos.png" alt="">
+        <img src="imagenes/abrillantados 2.png" alt="">
+        <img src="imagenes/bocadillo_de_platano_77317_4_600.jpg" alt="">
+        <img src="imagenes/besitos_de_coco_77317_3_600.jpg" alt="">
+    </div>
+
+
+<!-- Carrito -->
+    <section class="carrito" id="carrito">
+    <h2>Carrito de compras</h2>
+
+
+<!-- Video -->
+    <section class="tradicion" id="tradicion">  
+    <h2>Una dulce tradicion</h2>
+    <div class="cont-video">  
+        <video controls muted autoplay>
+            <source src="imagenes/Vídeo Dulces Tradicionales de Venezuela.mp4" type="video/mp4">
+        </video>
+    </div>
+
+<!--  Mapa  -->           
+    <section class="mapa" id="mapa">                        
+    <h2>Encuentranos</h2>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.622126094668!2d-58.3732506!3d
+    -34.6137156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5152e5f2b%3A0x3376ed6cc65d04fb!
+    2sBol%C3%ADvar%20%26%20Venezuela%2C%20C1097%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!
+    2sar!4v1760920896896!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" 
+    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+
+<!--  Formulario  -->
+    <section class="formulario" id="formulario">
+    <h2>Contactanos</h2>
+    <div>
+        <form action=https://formspree.io/f/mwprygvk method="post" target="_blank">
+            <div>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"
+                    autocomplete="name" required>
+            </div>
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="mail@*****.com"
+                    autocomplete="email" required>
+            </div>
+            <div>
+                <label for="mensaje">Mensaje</label>
+                <textarea type="text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"
+                    autocomplete="off"></textarea>
+            </div>
+            <div>
+                <button type="submit" id="enviarFormulario">Enviar</button>
+            </div>
+            <div id="validarFormulario">
+
+            </div>
+        </form>
+
+    </div>
+</div>
+</section>
+
+<!--  Reseñas  -->
+<section class="opiniones" id="opiniones">
+    <h2>Reseñas</h2>
+
+
+
+
+</body>
+</html>
