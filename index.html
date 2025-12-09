@@ -19,13 +19,13 @@
     <link rel="stylesheet" href="styles.css">
 
     <title>Lily dulces</title>
-    <link rel="icon" href="imagenes/logo3.ico"/>
+    <link rel="icon" href="imagenes/icono.png"/>
 </head>
 
 <body>
     <header>
        <div>
-            <img src="imagenes/Logo.jpg" alt="Logo" title="Lily Dulces">
+            <img src="imagenes/Logo.png" alt="Logo" title="Lily Dulces">
        </div>
         <nav>
             <ul>
@@ -42,28 +42,27 @@
     </header>
     
     <main>
-    <section id=inicio>
-<!-- Productos -->
-    <section class="producto" id=productos>
-    <h2>Productos</h2>
-    <div>
-        <img src="imagenes/coquitos.png" alt="">
-        <img src="imagenes/abrillantados 2.png" alt="">
-        <img src="imagenes/bocadillo_de_platano_77317_4_600.jpg" alt="">
-        <img src="imagenes/besitos_de_coco_77317_3_600.jpg" alt="">
-    </div>
+    
 
+<!-- Productos -->
+    <section class="productos" id="productos">
+        <h2>Productos</h2>
+        <div class="producto">
+        <!--Aqui el script introduce los productos-->
+        </div>   
+    </section>
 
 <!-- Carrito -->
-    <section class="carrito" id="carrito">
-    <h2>Carrito de compras</h2>
-
+    <section class="carritoCompras" id="carrito">
+    <!--Aqui el script introduce el carrito-->
+    </section>
+        
 
 <!-- Video -->
     <section class="tradicion" id="tradicion">  
     <h2>Una dulce tradicion</h2>
     <div class="cont-video">  
-        <video controls muted autoplay>
+        <video controls muted autoplay loop>
             <source src="imagenes/Vídeo Dulces Tradicionales de Venezuela.mp4" type="video/mp4">
         </video>
     </div>
@@ -77,7 +76,7 @@
     2sBol%C3%ADvar%20%26%20Venezuela%2C%20C1097%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!
     2sar!4v1760920896896!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" 
     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    
+    </section>
 
 <!--  Formulario  -->
     <section class="formulario" id="formulario">
@@ -112,11 +111,105 @@
 </section>
 
 <!--  Reseñas  -->
+
+<h2>Reseñas</h2>
 <section class="opiniones" id="opiniones">
-    <h2>Reseñas</h2>
+    <div class="card-opinion">
+        <div>
+            <img src="imagenes/Reseña1.jpg" alt="comentarios">
+            <p> Maria</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>10/08/2025</p>
+            <p>Excelentes los dulces</p>
+        </div>
+    </div>
 
+     <div class="card-opinion">
+        <div>
+            <img src="imagenes/Reseña2.jpg" alt="comentarios">
+            <p> Pedro</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>15/08/2025</p>
+            <p>Me encantaron los coquitos</p>
+        </div>
+    </div>
 
+     <div class="card-opinion">
+        <div>
+            <img src="imagenes/Reseña3.jpg" alt="comentarios">
+            <p> Julia</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>04/09/2025</p>
+            <p>100% recomendados</p>
+        </div>
+    </div>
+     <div class="card-opinion">
+        <div>
+            <img src="imagenes/Reseña4.jpg" alt="comentarios">
+            <p> Luis</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>05/09/2025</p>
+            <p>Los abrillantados son mis preferidos</p>
+        </div>
+    </div>
+     <div class="card-opinion">
+        <div>
+            <img src="imagenes/Reseña5.jpg" alt="comentarios">
+            <p> liliana</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>14/11/2025</p>
+            <p>La atencion es de primera</p>
+        </div>
+    </div>
+     <div class="card-opinion">
+        <div>
+            <img src="imagenes/Reseña6.jpg" alt="comentarios">
+            <p> Perla</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>04/03/2025</p>
+            <p>Son  buenisimos, no se los pierdan</p>
+        </div>
+    </div>
+</section>
 
+</section>
 
+<script src="script.js"></script>
 </body>
+ 
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#whatsapp" > <i class="fa-brands fa-square-whatsapp"></i></a></li>
+            <li><a href="#facebook" > <i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#instagram"> <i class="fa-brands fa-square-instagram"></i></a></li>
+        </ul>
+        
+    </nav>
+</footer>
+
 </html>

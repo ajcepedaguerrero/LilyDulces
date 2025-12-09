@@ -5,9 +5,11 @@ Proyecto de pagina web de una dulceria.
 ## Opciones
 
 - Muestra los productos
+- Muesttra carrito de compras
 - Muestra video relacionado
 - Muestra mapa de ubicacion
 - Permite contacto mediante formulario
+- Muestra reseñas de compradores
 
 ## Secciones
 - Barra de navegacionde la pagina
@@ -22,10 +24,13 @@ Proyecto de pagina web de una dulceria.
 
 - HTML
 - CSS
+- JAVASCRIPT
 
 ## Autor
 
 Alexander Cepeda
 
 ## Pagina
+
+https://github.com/ajcepedaguerrero/LilyDulces
 

@@ -1,7 +1,9 @@
+/*Escrito por Alexander Cepeda*/
+
 body {
     font-family: "Poetsen One", sans-serif;
     font-style: normal;
-    margin: 20;
+    margin: 10;
     background-image: url(imagenes/fondo1.png);  
 }
 
@@ -16,83 +18,79 @@ header {
     }
     
 header nav {
-    display: flex;
     width: 100%;
-    height: 4rem;
-    gap: 30rem;
+    height: 50%;
+    gap: 10rem;
     margin: 0;
     background-color: rgba(240, 137, 52, 0.705);
     border: solid rgb(245, 168, 96);
     }
 
 header ul {
-        display: flex;
-        flex-wrap: wrap;
-        width:90%;
-        gap: 1rem;
-        font-size: 1rem;
-        justify-content: space-between;
-        align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width:90%;
+    gap: 1rem;
+    justify-content: space-between;
+    align-content: center;
     }
 
 header li {
-        font-size: 4vh;
+    font-size: 150%;
     }
 
 header img {
-    width: 35%;
+    width: 30%;
     border: solid rgb(245, 168, 96);
     }
 
 header a {
-        text-decoration: none;      
-        color:black;
+    text-decoration: none;      
+    color:black;
     }
 
 main {
-        display: block;
-        background-size: cover;
+    display: block;
+    background-size: cover;
 
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 main>section>h2 {
-        font-size: 2rem;
-        margin-bottom: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    }
+ 
+.producto div {
+    background-color: rgb(233, 150, 122);
+    border: 5rem;
+    border: #0e0d0d;
     }
 
-.producto div {
-    align-items: center;
-}
 .producto img {
     width: 50%;
     height: 50%;
-    padding: 1rem;
+    padding-top: 2rem;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
 }
 
-.opiniones h2 {
-    
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 1.5rem;
-    border-top: rgba(0, 33, 104, 0.192) solid;
-    padding: 1rem;
-   
+.producto button {
+    background-color: aqua;
+    border-radius: 40%;
 }
 
+.card-producto {
+    background-color: rgba(233, 150, 122, 0.76);
+    padding-bottom: 2rem;
+}
 
 .carrito h2 {
-    
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -103,8 +101,62 @@ main>section>h2 {
    
 }
 
-.tradicion h2 {
+.carritoCompras {
+    margin: 2rem auto 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 80%;
+    min-width: 40%;
+    background-color: #fda27e;
     
+}
+
+.carritoCompras h2 {
+    color: #000000;
+    margin-top: 0;
+}
+
+.lista-carrito li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.lista-carrito button {
+    margin-left: 0.1rem;
+    padding: 0.1rem 0.1rem;
+    cursor: pointer;
+    border: 0.1rem solid #ccc;
+    border-radius: 0.3rem;
+    background-color: #f0f0f0;
+}
+
+.lista-carrito button {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+
+.total-carrito,
+.cantidad-carrito {
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+
+
+
+
+
+
+
+.tradicion h2 {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -116,7 +168,6 @@ main>section>h2 {
 }
 
 .cont-video {
-
     display: flex;
     justify-content: center;  
 }   
@@ -129,7 +180,6 @@ video {
 
 
 .mapa h2 {
-    
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
@@ -176,18 +226,11 @@ video {
     font-size: 1rem;
 }
 
-.formulario form div {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 .formulario input {
     width: 100%;
     height: 100%;
     padding: 0.7rem;
-    border: 1px solid #ccc;
+    border: 1px solid #0e0d0d;
     border-radius: 0.5rem;
     font-size: 1rem;
 }
@@ -196,8 +239,92 @@ video {
     width: 100%;
     height: 100%;
     padding: 0.7rem;
-    border: 1px solid #ccc;
+    border: 1px solid #161515;
     border-radius: 0.5rem;
     font-size: 1rem;
+}
+
+.formulario button {
+    background-color: aqua;
+    border-radius: 30%;
+    width: 50%;
+    
+}
+
+.opiniones h2 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1.5rem;
+    border-top: rgba(0, 33, 104, 0.192) solid;
+    padding: 1rem;
+   
+}
+
+.opiniones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    place-items: top, center;
+    gap: 8rem;
+    padding: 20px;
+}
+
+.card-opinion {
+    border-radius: 10px;
+    color: rgb(22, 21, 21);
+    width: 110%;
+    border: 1px solid rgb(19, 17, 17);
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.3s ease;
+}
+
+.card-opinion:hover {
+    transform: translateY(-1px) translateX(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.card-opinion img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+
+footer {
+    border-bottom: solid rgba(128, 128, 128, 0.301);
+    display: flex;
+    flex-wrap: wrap;
+    background-size:cover;
+    }
+    
+footer nav {
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    gap: 2rem;
+    margin: 0;
+    background-color: rgba(240, 137, 52, 0.705);
+    border: solid rgb(245, 168, 96);
+    }
+
+footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        width:100%;
+        gap: 2rem;
+        font-size: 1rem;
+        justify-content: end;
+        align-content: center;
+    }
+
+footer li {
+        font-size: 6vh;
+    }
+
+
+footer a {
+    text-decoration: none;      
+    color:black;
 }
 
