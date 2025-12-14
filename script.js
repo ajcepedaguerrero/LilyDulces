@@ -1,4 +1,5 @@
 // Escrito por Alexander Cepeda
+// Prof. Norberto Llopiz
 
 //LISTA DE PRODUCTOS
 
@@ -73,10 +74,12 @@ function actualizarCarritoHTML() {
     const carritoCompras = document.querySelector(".carritoCompras");
 
     carritoCompras.innerHTML = `
-        <h2>Tu Carrito de Compras</h2>
-        <ul class="lista-carrito"></ul>
-        <p class="total-carrito"></p>
-        <p class="cantidad-carrito"></p>
+       <div divCarritoCompras>
+            <h2>Tu Carrito de Compras</h2>
+            <ul class="lista-carrito"></ul>
+            <p class="total-carrito"></p>
+            <p class="cantidad-carrito"></p>
+        </div>
     `;
     
     const listaCarrito = carritoCompras.querySelector(".lista-carrito");
@@ -90,7 +93,8 @@ function actualizarCarritoHTML() {
             const item = carrito[i];
             const li = document.createElement("li");
             li.innerHTML = `
-                <span>${item.nombre} - $${item.precio} x ${item.cantidad}</span>
+                <span>${item.nombre}</span>
+                <span>$${item.precio} x ${item.cantidad}</span>
                 <div>
                     <button class="btn-cantidad" data-id="${item.id}" data-action="restar">-</button>
                     <button class="btn-cantidad" data-id="${item.id}" data-action="sumar">+</button>
@@ -148,7 +152,6 @@ function agregarProductoAlCarrito(idProducto) {
     actualizarCarritoHTML();
 }
 
-
 // Suma una unidad a la cantidad de un producto en el carrito.
 function sumarCantidadProducto(idProducto) {
     let productoEnCarrito = null;
@@ -190,10 +193,10 @@ function restarCantidadProducto(idProducto) {
 
 // Elimina completamente un producto del carrito.
 function eliminarProductoDelCarrito(idProducto) {
-    // Reconstruir el array carrito sin el producto a eliminar
+// Reconstruir el array carrito sin el producto a eliminar
     const nuevoCarrito = [];
     for (let i = 0; i < carrito.length; i++) {
-        // Buscar los elementos distintos al que hay que eliminar
+// Buscar los elementos distintos al que hay que eliminar
         if (carrito[i].id !== idProducto) {
             nuevoCarrito.push(carrito[i]);
         }
@@ -220,8 +223,16 @@ function manejarClicCarrito(evento) {
     }
 }
 
+// BORRAR FORMULARIO
 
-/* ------------------ PROGRAMA PRINCIPAL ------------------*/
+function limpiarForm(){
+    setTimeout(()=>{form.reset()},300);
+
+}
+
+// PROGRAMA PRINCIPAL
 
 agregarProductos();
 actualizarCarritoHTML();
+const form=document.getElementById("formularioContacto");
+form.addEventListener("submit",limpiarForm);

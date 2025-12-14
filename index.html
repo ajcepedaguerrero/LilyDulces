@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
 <body>
     <header>
        <div>
-            <img src="imagenes/Logo.jpg" alt="Logo" title="Lily Dulces">
+            <img src="imagenes/Logo.png" alt="Logo" title="Lily Dulces">
        </div>
         <nav>
             <ul>
@@ -41,9 +41,8 @@
         </nav>
     </header>
     
-    <main>
+<main>
     
-
 <!-- Productos -->
     <section class="productos" id="productos">
         <h2>Productos</h2>
@@ -57,160 +56,149 @@
     <!--Aqui el script introduce el carrito-->
     </section>
         
-
 <!-- Video -->
-    <section class="tradicion" id="tradicion">  
-    <h2>Una dulce tradicion</h2>
-    <div class="cont-video">  
-        <video controls muted autoplay loop>
+    <section class="tradicion" id="tradicion"> 
+        <h2>Una dulce tradicion</h2>           
+        <div class="cont-video">  
+            <video controls muted autoplay loop>
             <source src="imagenes/Vídeo Dulces Tradicionales de Venezuela.mp4" type="video/mp4">
-        </video>
-    </div>
+            </video>
+        </div>
+    </section>
 
 <!--  Mapa  -->           
-    <section class="mapa" id="mapa">                        
-    <h2>Encuentranos</h2>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.622126094668!2d-58.3732506!3d
-    -34.6137156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5152e5f2b%3A0x3376ed6cc65d04fb!
-    2sBol%C3%ADvar%20%26%20Venezuela%2C%20C1097%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!
-    2sar!4v1760920896896!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" 
-    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section class="mapa" id="mapa">  
+        <h2>Encuentranos</h2>  
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.622126094668!2d-58.3732506!3d
+            -34.6137156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad5152e5f2b%3A0x3376ed6cc65d04fb!
+            2sBol%C3%ADvar%20%26%20Venezuela%2C%20C1097%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!
+            2sar!4v1760920896896!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>    
     </section>
 
 <!--  Formulario  -->
     <section class="formulario" id="formulario">
-    <h2>Contactanos</h2>
-    <div>
-        <form action=https://formspree.io/f/mwprygvk method="post" target="_blank">
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"
-                    autocomplete="name" required>
-            </div>
-            <div>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="mail@*****.com"
-                    autocomplete="email" required>
-            </div>
-            <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea type="text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"
-                    autocomplete="off"></textarea>
-            </div>
-            <div>
-                <button type="submit" id="enviarFormulario">Enviar</button>
-            </div>
-            <div id="validarFormulario">
-
-            </div>
-        </form>
-
-    </div>
-</div>
-</section>
+        <h2>Contactanos</h2>
+        <div class="divFormulario">        
+            
+            <form id="formularioContacto" action=https://formspree.io/f/mwprygvk method="post" target="_blank">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre"
+                        autocomplete="name" required>
+                </div>
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="mail@*****.com"
+                        autocomplete="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea type="text" name="mensaje" id="mensaje" placeholder="Escribe tu mensaje"
+                        autocomplete="off"></textarea>
+                </div>
+                <div>
+                    <button type="submit" id="enviarFormulario">Enviar</button>
+                    <button type="reset" id="BorrardatosFormulario">Borrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
 <!--  Reseñas  -->
 
-<h2>Reseñas</h2>
-<section class="opiniones" id="opiniones">
-    <div class="card-opinion">
-        <div>
-            <img src="imagenes/Reseña1.jpg" alt="comentarios">
-            <p> Maria</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <p>10/08/2025</p>
-            <p>Excelentes los dulces</p>
-        </div>
-    </div>
+<section class="opiniones" id="opiniones">   
+        <h2>Reseñas</h2>
+        <div class="divOpinion">
+            <div class="card-opinion">
+                    <img src="imagenes/Reseña1.jpg" alt="comentarios">
+                    <p> Maria</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>10/08/2025</p>
+                    <p>Excelentes los dulces</p>
+            </div>
 
-     <div class="card-opinion">
-        <div>
-            <img src="imagenes/Reseña2.jpg" alt="comentarios">
-            <p> Pedro</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <p>15/08/2025</p>
-            <p>Me encantaron los coquitos</p>
-        </div>
-    </div>
+            <div class="card-opinion">
+                    <img src="imagenes/Reseña2.jpg" alt="comentarios">
+                    <p> Pedro</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>15/08/2025</p>
+                    <p>Me encantaron los coquitos</p>
+            </div>
 
-     <div class="card-opinion">
-        <div>
-            <img src="imagenes/Reseña3.jpg" alt="comentarios">
-            <p> Julia</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <p>04/09/2025</p>
-            <p>100% recomendados</p>
-        </div>
-    </div>
-     <div class="card-opinion">
-        <div>
-            <img src="imagenes/Reseña4.jpg" alt="comentarios">
-            <p> Luis</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <p>05/09/2025</p>
-            <p>Los abrillantados son mis preferidos</p>
-        </div>
-    </div>
-     <div class="card-opinion">
-        <div>
-            <img src="imagenes/Reseña5.jpg" alt="comentarios">
-            <p> liliana</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <p>14/11/2025</p>
-            <p>La atencion es de primera</p>
-        </div>
-    </div>
-     <div class="card-opinion">
-        <div>
-            <img src="imagenes/Reseña6.jpg" alt="comentarios">
-            <p> Perla</p>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <p>04/03/2025</p>
-            <p>Son  buenisimos, no se los pierdan</p>
-        </div>
-    </div>
-</section>
+            <div class="card-opinion">
+                    <img src="imagenes/Reseña3.jpg" alt="comentarios">
+                    <p> Julia</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>04/09/2025</p>
+                    <p>100% recomendados</p>
+            </div>
 
-</section>
+            <div class="card-opinion">
+                    <img src="imagenes/Reseña4.jpg" alt="comentarios">
+                    <p> Luis</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>05/09/2025</p>
+                    <p>Los abrillantados son mis preferidos</p>
+            </div>
 
+            <div class="card-opinion">
+                    <img src="imagenes/Reseña5.jpg" alt="comentarios">
+                    <p> liliana</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>14/11/2025</p>
+                    <p>La atencion es de primera</p>
+            </div>
+
+            <div class="card-opinion">
+                    <img src="imagenes/Reseña6.jpg" alt="comentarios">
+                    <p> Perla</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>04/03/2025</p>
+                    <p>Son  buenisimos, no se los pierdan</p>
+            </div>
+        </div>
+</secction>
+
+</main>
 <script src="script.js"></script>
 </body>
  
 <footer>
-    <nav>
-        <ul>
-            <li><a href="#whatsapp" > <i class="fa-brands fa-square-whatsapp"></i></a></li>
-            <li><a href="#facebook" > <i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="#instagram"> <i class="fa-brands fa-square-instagram"></i></a></li>
+    <nav id="barraPie">
+        <ul id="listPie">
+            <li id="whatsapp"><a href="https://wa.me/+5491155555555" target="_blank"> <i class="fa-brands fa-square-whatsapp"></i></a></li>
+            <li id="facebook"><a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook"></i></a></li>
+            <li id="instagram"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></li>
         </ul>
         
     </nav>
 </footer>
-
 
 </html>

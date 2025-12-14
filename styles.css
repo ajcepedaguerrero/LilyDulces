@@ -52,7 +52,6 @@ header a {
 main {
     display: block;
     background-size: cover;
-
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -64,8 +63,7 @@ main {
 main>section>h2 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    }
- 
+}
 .producto div {
     background-color: rgb(233, 150, 122);
     border: 5rem;
@@ -98,7 +96,6 @@ main>section>h2 {
     margin: 1.5rem;
     border-top: rgba(0, 33, 104, 0.192) solid;
     padding: 1rem;
-   
 }
 
 .carritoCompras {
@@ -109,39 +106,37 @@ main>section>h2 {
     max-width: 80%;
     min-width: 40%;
     background-color: #fda27e;
-    
 }
 
-.carritoCompras h2 {
-    color: #000000;
-    margin-top: 0;
+.divCarritoCompras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .lista-carrito li {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
+    margin-bottom: 2rem;
     padding-right: 0.5rem;
 }
 
 .lista-carrito button {
-    margin-left: 0.1rem;
-    padding: 0.1rem 0.1rem;
+    
+    padding: 0.2rem 1rem;
     cursor: pointer;
-    border: 0.1rem solid #ccc;
     border-radius: 0.3rem;
-    background-color: #f0f0f0;
-}
-
-.lista-carrito button {
     background-color: #dc3545;
     color: white;
     border-color: #dc3545;
+    font-size: larger;
 }
 
-.total-carrito,
 .cantidad-carrito {
     font-weight: bold;
     margin-top: 10px;
@@ -149,12 +144,24 @@ main>section>h2 {
     border-top: 1px solid #eee;
 }
 
+.tradicion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+}
 
 
-
-
-
-
+.tradicion div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
 
 .tradicion h2 {
     font-size: 1.5rem;
@@ -164,20 +171,29 @@ main>section>h2 {
     margin: 1.5rem;
     border-top: rgba(0, 33, 104, 0.192) solid;
     padding: 1rem;
-   
 }
 
-.cont-video {
-    display: flex;
-    justify-content: center;  
+.tradicion video {
+    width: 80%; 
 }   
-    
-video {
-    width: 40%;
-    height: 40%;
-    
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 60%;
 }
 
+.mapa div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
 
 .mapa h2 {
     font-size: 1.5rem;
@@ -187,21 +203,20 @@ video {
     margin: 1.5rem;
     border-top: rgba(0, 33, 104, 0.192) solid;
     padding: 1rem;
-   
 }
 
 .mapa iframe {
-    height: 40vh;
-    width: 40%
-    
+    width: 100%
+
 }
 
 .formulario {
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-direction: column;
-    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 60%;
 }
 
 .formulario h2 {
@@ -214,11 +229,12 @@ video {
     padding: 1rem;
 }
 
-.formulario div {
+.divFormulario {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 1rem 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .formulario label {
@@ -248,7 +264,15 @@ video {
     background-color: aqua;
     border-radius: 30%;
     width: 50%;
-    
+}
+
+.opiniones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 80%;
 }
 
 .opiniones h2 {
@@ -256,24 +280,25 @@ video {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 1.5rem;
+    margin: 2rem;
     border-top: rgba(0, 33, 104, 0.192) solid;
     padding: 1rem;
-   
 }
-
-.opiniones {
+.divOpinion {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    place-items: top, center;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 10fr));
+    place-items: start, center;
+    width: 80%;
     gap: 8rem;
-    padding: 20px;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .card-opinion {
-    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(252, 173, 148);
+    border-radius: 1rem;
     color: rgb(22, 21, 21);
-    width: 110%;
     border: 1px solid rgb(19, 17, 17);
     cursor: pointer;
     transition: transform 0.15s ease, box-shadow 0.3s ease;
@@ -285,17 +310,18 @@ video {
 }
 
 .card-opinion img {
+    border-radius: 1rem;
     width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
 }
-
 
 footer {
     border-bottom: solid rgba(128, 128, 128, 0.301);
     display: flex;
     flex-wrap: wrap;
     background-size:cover;
+    width: 100%;
     }
     
 footer nav {
@@ -319,7 +345,7 @@ footer ul {
     }
 
 footer li {
-        font-size: 6vh;
+        font-size: 2rem;
     }
 
 
@@ -328,3 +354,10 @@ footer a {
     color:black;
 }
 
+footer div {
+    text-decoration: none;      
+    color:black;
+    justify-items: left;
+    height: 4rem;
+    background-color: #000000;
+}
